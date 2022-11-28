@@ -9,6 +9,7 @@ import {v4 as uuidv4} from 'uuid';
 import About from './pages/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutIconLink from './components/AboutIconLink';
+import {FeedbackProvider} from './context/FeedbackContext'
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData)
@@ -24,6 +25,7 @@ function App() {
     setFeedback([newFeedback, ...feedback])
   } 
   return (
+    <FeedbackProvider>
     <Router>
     <Header text = "Feedback UI" />
     <div className='container'>
@@ -44,6 +46,7 @@ function App() {
     </div>
     <AboutIconLink />
     </Router>
+    </FeedbackProvider>
   );
 }
 
