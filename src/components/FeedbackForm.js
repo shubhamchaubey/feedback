@@ -38,7 +38,7 @@ function FeedbackForm({handleAdd}) {
     <Card>
       <form onSubmit={handleSubmit}>
         <h2> How would you rate our service? </h2>
-        <RatingSelect select={(rating)=> console.log(rating)}/>
+        <RatingSelect select={(rating)=> setRating(rating)}/>
 
         <div className='input-group'>
           <input onChange={handleTextChange} type='text' 

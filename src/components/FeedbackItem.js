@@ -5,9 +5,9 @@ import { FaTimes } from 'react-icons/fa'
 
 function FeedbackItem({item, handleDelete}) {
 
-  const handleClick = () => {
+  // const handleClick = () => {
     
-  }
+  // }
 
   return (
     <Card>
