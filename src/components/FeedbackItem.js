@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import Card from "./shared/Card"
-import { FaTimes } from 'react-icons/fa'
+import { FaTimes, } from 'react-icons/fa'
 import { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 
 
 function FeedbackItem({item}) {
 
-  const {deleteFeedback} = useContext(FeedbackContext)
+  const {deleteFeedback, } = useContext(FeedbackContext)
 
   return (
     <Card>
