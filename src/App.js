@@ -13,7 +13,7 @@ function App() {
   return (
     <FeedbackProvider>
     <Router>
-    <Header text = "Feedback UI" />
+    <Header text = "Feedback App" />
     <div className='container'>
       <Routes>
       <Route exact path='/' 
